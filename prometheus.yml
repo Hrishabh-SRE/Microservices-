@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 5s # How often to grab metrics (set low for learning)
+
+scrape_configs:
+  - job_name: 'hello-service-monitor'
+    static_configs:
+      - targets: ['localhost:5000']
